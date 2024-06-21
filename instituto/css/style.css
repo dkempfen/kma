@@ -1,0 +1,1397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.main-cont {
+    background: #f2f2f2;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.desc-header img {
+    width: 90%;
+}
+
+.desc-header p {
+    font-size: 2em;
+    color: #336666;
+}
+
+.cont-header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-header h1 {
+    color: #336666;
+}
+
+.cont-header form {
+    width: 350px;
+    height: auto;
+    border: 1px solid #336666;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 1em;
+}
+
+.cont-header form label {
+    display: block;
+    padding: 10px;
+}
+
+.cont-header input {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#loginUsuario,
+#loginProfesor {
+    display: block;
+    width: 100%;
+    padding: .7em;
+    border: none;
+    border-radius: 8px;
+    background: #153744;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 14px;
+
+}
+
+.caja_busqueda {
+    margin-top: 13px;
+}
+
+.clave {
+    margin-top: 11px;
+    border-radius: 4px;
+    color: #1a73e8;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: .25px;
+    outline: 0;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: inherit;
+    text-align: left;
+    margin: -2px -3px;
+    padding: 2px 3px;
+    border: 0;
+}
+
+#CambioClave {
+    margin-top: 4px;
+    display: block;
+    width: 100%;
+    padding: .7em;
+    border: none;
+    border-radius: 8px;
+    background: #153744;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.alert {
+    color: red;
+}
+
+.app-sidebar__user-avatar {
+    width: 68px;
+    padding: 2px;
+    height: 68px;
+    background: #fff;
+}
+
+
+
+#verPassword {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    float: right;
+    margin-top: -60px;
+}
+
+.view {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}
+
+.btn {
+
+    background-color: #142e3d;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background: #04a1fc;
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-position: right;
+    background: #142e3d;
+    color: wheat;
+}
+
+.buttons.button-large {
+    padding: 0 26px;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+}
+
+.botonfooter {
+    background-color: #ff4747;
+    width: 230px;
+}
+
+.buttons {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin: 5px;
+    padding: 0 22px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #0066ad;
+    color: #FFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.container-clave {
+    padding-right: 50px;
+    padding-left: 120px;
+    margin-right: auto;
+    margin-left: 25%;
+    width: 1170px;
+    font-family: sans-serif;
+
+
+}
+
+.panel-recupero {
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+
+   
+}
+.caudro-recupero {
+
+    border-color: #bce8f1;
+
+}
+
+.recupero-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    color: #31708f;
+    background-image: linear-gradient(to bottom, #d9edf7 0, #c4e3f3 100%)
+}
+
+.recupero-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+
+
+.btn-enviar-recupero {
+    margin-left: -11px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+ 
+}
+
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+
+}
+.form-horizontal{
+    margin-left: 10px;
+
+}
+
+.ace {
+
+
+   clip: rect(1px,1px,1px,1px); 
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+}
+
+.ace.ace-switch.ace-switch-6{
+    content: "";
+    text-indent: 6px;
+    color: #fff;
+    /* border-color: #b7d3e5; */
+    background-color: #ff893c;
+}
+.ace .ace-switch {
+    margin: 0 4px;
+    min-height: 24px;
+}
+
+.ace{
+    /* position: relative; */
+    display: inline-block;
+    margin: 0;
+    line-height: 20px;
+    min-height: 18px;
+    min-width: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.ace .ace-switch .ace-switch-6 {
+    font-family: FontAwesome;
+    content: "";
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    box-shadow: none;
+    border-width: 0;
+    font-weight: lighter;
+    font-size: 16px;
+    border-radius: 12px;
+    display: inline-block;
+    background-color: #888;
+    color: #f2f2f2;
+    width: 52px;
+    height: 22px;
+    line-height: 21px;
+    text-indent: 32px;
+    -webkit-transition: background .1s ease;
+    -o-transition: background .1s ease;
+    transition: background .1s ease;
+}
+
+input[type=checkbox].ace.ace-switch.ace-switch-6+.lbl {
+    /* position: relative; */
+}
+input[type=checkbox].ace.ace-switch+.lbl {
+    margin: 0 4px;
+    min-height: 24px;
+}
+input[type=checkbox].ace+.lbl, input[type=radio].ace+.lbl {
+    /* position: relative; */
+    display: inline-block;
+    margin: 0;
+    line-height: 20px;
+    min-height: 18px;
+    min-width: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+input[type=checkbox].ace.ace-switch.ace-switch-6:checked+.lbl::before {
+    content: "";
+    text-indent: 6px;
+    color: #fff;
+    border-color: #b7d3e5;
+    background-color: #ff893c;
+}
+input[type=checkbox].ace.ace-switch.ace-switch-6+.lbl::before {
+    font-family: FontAwesome;
+    content: "";
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    box-shadow: none;
+    border-width: 0;
+    font-weight: lighter;
+    font-size: 16px;
+    border-radius: 12px;
+    display: inline-block;
+    background-color: #888;
+    color: #f2f2f2;
+    width: 52px;
+    height: 22px;
+    line-height: 21px;
+    text-indent: 32px;
+    -webkit-transition: background .1s ease;
+    -o-transition: background .1s ease;
+    transition: background .1s ease;
+}
+.ace.ace-switch{
+   text-indent: 8px; 
+    color: #fff; 
+    text-shadow: 0 0 0 #fff; 
+     background-color: #8ab2c9; 
+    border-color: #6a8ca8; 
+}
+.ace .ace-switch {
+    font-family: 'Open Sans';
+    content: "ON         OFF";
+    color: #999;
+    ormal: ;
+    font-size: 11px;
+    line-height: 17px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 1px 1px 0 rgba(0,0,0,.15);
+    border: 1px solid #ccc;
+    text-align: left;
+    float: left;
+    padding: 0;
+    width: 52px;
+    text-indent: -21px;
+    margin-right: 0;
+    -webkit-transition: text-indent .3s ease;
+    -o-transition: text-indent .3s ease;
+    transition: text-indent .3s ease;
+    top: auto;
+}
+
+
+/* Estilo para el interruptor */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Estilo para el fondo del interruptor */
+.switch .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 17px; /* Mitad de la altura para hacerlo redondeado */
+  background-color: #ccc; /* Color de fondo cuando el interruptor está desactivado */
+  cursor: pointer;
+}
+
+/* Estilo para el punto deslizante */
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%; /* Hace que el punto sea redondeado */
+  background-color: white; /* Color del punto cuando el interruptor está desactivado */
+  transition: 0.4s; /* Agrega una animación suave al deslizar */
+}
+
+/* Estilo para el interruptor cuando está activado */
+.switch input[type="checkbox"]:checked + .slider {
+  background-color: #2196F3; /* Cambia el color de fondo cuando el interruptor está activado */
+}
+
+/* Estilo para el punto deslizante cuando el interruptor está activado */
+.switch input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(26px); /* Mueve el punto deslizante a la posición "encendido" */
+}
+/* Oculta el input onoffswitch-checkbox */
+.switch input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+#message tr {
+    min-height: 40px; /* Ajusta la altura mínima según tus necesidades */
+}
+#message tr {
+    height: 40px; /* Ajusta la altura según tus necesidades */
+}
+
+#container {
+    margin-left: auto; /* Margen izquierdo automático para centrar horizontalmente */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-right: auto; /* Margen derecho automático para centrar horizontalmente */
+    margin-bottom: 20px; /* Margen inferior para separar de otros elementos */
+    max-width: 100%; /* Ancho máximo del contenedor */
+
+}
+
+#table-container {
+    margin-top: 20px;
+    overflow-x: auto; /* Agrega desplazamiento horizontal si es necesario */
+
+}
+
+#my-table {
+
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#my-table th, #my-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#my-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+#my-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.edit-btn, .delete-btn {
+    cursor: pointer;
+    color: #007BFF;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    color: #0056b3;
+}
+
+
+
+--------------------
+#filter-container .filter-inputs {
+    margin-bottom: 5px; /* Añade margen inferior para separar los div */
+}
+#filter-container {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; /* Margen izquierdo automático para centrar horizontalmente */
+    max-width: 100%; /* Ancho máximo del contenedor */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben en el ancho de la pantalla */
+    justify-content: space-between;
+}
+
+/* Estilos para las etiquetas */
+#filter-container label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Estilos para los campos de entrada */
+#fecha_desde, #fecha_hasta, #titulo {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilos para el botón de búsqueda */
+#btn_buscar {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px; /* Margen izquierdo para separar del último campo de entrada */
+    margin-top: 8px; /* Margen superior para separar de los elementos anteriores */
+    margin-bottom: 8px; /* Margen inferior para separar de los elementos siguientes */
+    align-self: center; /* Centra verticalmente el botón dentro del contenedor */
+}
+
+#btn_buscar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el contenedor principal */
+.filter-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
+}
+
+/* Estilos para el grupo de filtros */
+.filter-inputs {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-right: 10px; /* Añade margen inferior para separar los div */
+    margin-bottom: 5px; /* Añade margen inferior para separar los elementos */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilos para el botón de nueva publicación */
+.new-publication-button {
+    margin-left: 10px; /* Agrega un margen izquierdo para separar el botón */
+}
+@media (max-width: 768px) {
+    .filter-inputs {
+        flex: 0 0 100%; /* Los elementos ocuparán todo el ancho en pantallas pequeñas */
+    }
+}
+
+
+
+/* Estilos para los contenedores de texto y botones */
+.col-lg-4 .card  {
+    border-radius: 10px; /* Redondea las esquinas de los contenedores de texto */
+}
+
+.card-divider {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.card-footer .btn-group .btn {
+    border-radius: 0;
+}
+
+
+.custom-button {
+    background-color: #e0e0e0; /* Gris suave */
+    color: #333; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.1s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.custom-button:hover {
+    background-color: #ccc; /* Gris un poco más oscuro al pasar el cursor */
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+#columna1 {
+}
+#columna2 {
+}
+#carrers {
+    background: #f7f6f4;
+    padding: 60px 0;
+    padding-bottom: 80px; }
+    #carrers .container-carrera  {
+      display: flex;
+      justify-content: center;
+      max-width: 760px;
+      flex-wrap: wrap; }
+      #carrers .container-carrera  .title__primary {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px; }
+      #carrers .container-carrera  .card {
+        flex: 1;
+        margin-right: 10px;
+        position: relative; }
+        #carrers .container-carrera  .card:hover .centrado .button {
+          height: 42px;
+          opacity: 1;
+          visibility: visible; }
+        #carrers .container-carrera  .card:hover:before {
+          background: linear-gradient(to top, black 0%, transparent 100%); }
+        #carrers .container-carrera  .card:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+          z-index: 1;
+          transition: .3s; }
+        #carrers .container-carrera  .card:last-child {
+          margin-right: 0; }
+        #carrers .container-carrera  .card .centrado {
+          position: absolute;
+          bottom: 40px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 2;
+          color: white;
+          font-weight: 600;
+          font-size: 20px;
+          text-align: center;
+          width: 100%;
+          line-height: 20px;
+          display: flex;
+          flex-direction: column; }
+          #carrers .container-carrera  .card .centrado .button {
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            padding: 10px 20px;
+            overflow: hidden;
+            visibility: hidden;
+            opacity: 0;
+            transition: .3s;
+            height: 0; }
+  
+  @media screen and (max-width: 499px) {
+    #carrers {
+      padding: 40px 0;
+      padding-bottom: 60px; }
+      #carrers .container-carrera  {
+        flex-direction: column; }
+        #carrers .container-carrera  .card {
+          display: flex;
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px; }
+          #carrers .container-carrera  .card:last-child {
+            margin-bottom: 0; }
+          #carrers .container-carrera  .card .centrado .button {
+            visibility: visible;
+            opacity: 1;
+            height: initial; } 
+        }
+
+.container-carrera {
+    width: 100%;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+
+.custom-button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: #fff; /* Texto en blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.1s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-weight: bold; /* Texto en negrita */
+    font-size: 18px; /* Tamaño del texto */
+}
+  
+.custom-button:hover {
+    background-color: #45a049; /* Color de fondo verde más oscuro al pasar el cursor */
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+/* Estilo para el checkbox y el texto "Seleccionar" */
+.tarjeta-checkbox {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según tus preferencias */
+    right: 10px; /* Ajusta la posición horizontal según tus preferencias */
+    transform: scale(1.5); /* Ajusta el tamaño del checkbox según tus preferencias */
+}
+
+/* Ajusta el estilo del texto "Seleccionar" */
+#seleccionar-label {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según tus preferencias */
+    right: 30px; /* Ajusta la posición horizontal según tus preferencias */
+    font-size: 14px; /* Ajusta el tamaño de fuente según tus preferencias */
+    color: #555; /* Ajusta el color del texto según tus preferencias */
+}
+
+
+.expansor {
+    cursor: pointer;
+    font-size: 18px;
+    color: #007bff;
+    /* Color azul de Bootstrap */
+    margin-left: 10px;
+    /* Espacio entre el texto y el icono */
+}
+
+.expansor:hover {
+    color: #0056b3;
+    /* Cambia el color al pasar el mouse por encima */
+}
+
+.espaciado-entre-filas {
+    margin-bottom: 40px;
+}
+
+.espaciado-entre-plames {
+    margin-top: 200px;
+
+    /* Ajusta la cantidad de espacio según tus preferencias */
+}
+
+.buttonIcon {
+    margin-right: 15px;
+   
+
+
+    /* Ajusta el valor según la separación deseada */
+}
+
+.custom-link {
+    display: inline-block;
+    border: 1px solid #4a6da7;
+    background-color: #4a6da7;
+    
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Bordes redondeados */
+    text-decoration: none;
+}
+
+.custom-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.custom-link a:hover {
+  
+    text-decoration: none;
+    color: white; /* Cambia el color del texto al pasar el mouse */
+}
+
+.planpdf-button {
+    display: inline-block;
+    padding: 10px 20px;
+    /* Ajusta el espaciado interior según sea necesario */
+    background-color: #D32F2F; /* Tono de rojo oscuro similar al de los PDF */
+    /* Color de fondo */
+    color: white;
+    /* Color de texto */
+    border: 1px solid #4a6da7;
+    /* Borde con el mismo color de fondo */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    /* Bordes redondeados */
+    text-decoration: none;
+    /* Quitar subrayado de enlace */
+    margin-right: 10px; /* Ajusta el margen entre los botones */
+
+
+}
+
+.planpdf-button:hover {
+    background-color: #395c94;
+    color: white; /* Cambia el color del texto al pasar el mouse */
+    text-decoration: none;
+
+    /* Cambiar el color de fondo al pasar el mouse */
+}
+
+.planexcel-button {
+    display: inline-block;
+    padding: 10px 20px;
+    /* Ajusta el espaciado interior según sea necesario */
+    background-color: #1E8449; /* Un tono de verde similar al de Excel */
+    /* Color de fondo */
+    color: white;
+    /* Color de texto */
+    border: 1px solid #4a6da7;
+    /* Borde con el mismo color de fondo */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    /* Bordes redondeados */
+    text-decoration: none;
+    /* Quitar subrayado de enlace */
+    margin-right: 10px; /* Ajusta el margen entre los botones */
+
+
+}
+.btn-buscar {
+    font-weight: bold;
+    display: inline-flex; /* Usa flexbox para alinear el icono y el texto en línea */
+    align-items: center; /* Alinea verticalmente el contenido */
+    padding: 10px 30px;
+    background-color: #E74C3C;
+    color: white;
+    border: 1px solid #4a6da7;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 210px;
+}
+
+.btn-buscar i {
+    margin-right: 15px; /* Espacio entre el icono y el texto */
+}
+
+
+.btn-buscar:hover 
+.planexcel-button:hover {
+    background-color: #395c94;
+    color: white; /* Cambia el color del texto al pasar el mouse */
+    text-decoration: none;
+
+    /* Cambiar el color de fondo al pasar el mouse */
+}
+.Usernalta-button,
+.planalta-button {
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el espaciado según tus preferencias */
+    background-color: blue; /* Cambia el color según tus preferencias */
+    color: white; /* Cambia el color del texto según tus preferencias */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+Usernalta-button:hover,
+.planalta-button:hover {
+    background-color: #00008B; /* Cambia el color de fondo cuando se pasa el mouse */
+    /* Puedes ajustar este color según tus preferencias */
+    color: white; /* Cambia el color del texto al pasar el mouse */
+    text-decoration: none;
+
+}
+
+
+/* Estilos para el menú principal */
+.custom-menu {
+    
+    background-color: #f2f2f2; /* Cambiar el color de fondo */
+    text-align: center; /* Centro horizontalmente el contenido */
+
+}
+
+.custom-nav {
+    
+    font-family: Arial, sans-serif; /* Cambiar la fuente */
+
+}
+
+.custom-menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.custom-menu-item {
+    display: inline-block;
+    margin-right: 0px;
+
+}
+
+.custom-menu-link {
+    text-decoration: none;
+    font-size: 18px; /* Agrandar el tamaño del texto */
+    color: #333; /* Cambiar el color del texto */
+    transition: color 0.3s ease;
+    text-align: center; /* Centra el texto dentro del enlace */
+    display: block; /* Hace que el enlace ocupe todo el ancho disponible */
+    margin-top: 10px; /* Agrega espacio arriba del enlace para centrarlo verticalmente */
+
+}
+
+.custom-menu-link:hover {
+    text-decoration: none; /* Elimina el subrayado al hacer hover */
+    background-color: #ccc; /* Cambia el color de fondo al pasar el mouse */
+    color: #000; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Estilos para el menú desplegable */
+.custom-sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Cambiar el color de fondo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.custom-menu-item:hover .custom-sub-menu {
+    display: block;
+}
+
+.custom-sub-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.custom-sub-menu li {
+    margin: 10px;
+}
+
+.custom-sub-menu a {
+    text-decoration: none;
+    color: #333; /* Cambiar el color del texto */
+}
+
+
+
+.menu-group {
+    background-color: #f0f0f0; /* Cambia el color de fondo según tu preferencia */
+    width: 300px; /* Cambia el valor según tu preferencia */
+    padding: 20px; /* Agrega espacio interno según tu preferencia */
+    width: calc(34.1% - 12px);
+    display: inline-block;
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+    margin: 0; /* Elimina el margen */
+    text-align: center; /* Centra el contenido horizontalmente */
+
+
+
+}
+
+.menu-group:hover {
+    text-align: center  ; /* Elimina el centrado horizontal al hacer hover */
+
+    background-color: #ccc; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.custom-form-group {
+    margin-right: 40px; /* Puedes ajustar el valor según tu preferencia */
+}
+
+.label-spacing {
+    margin-right: 10px; /* Ajusta este valor según la cantidad de espacio que desees */
+    color: #000; /* Color de texto más oscuro */
+
+}
+
+#menu-container {
+    margin-top: 25px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+
+
+
+
+
+
+.btn-compacto {
+    padding: 1px 1px; /* Ajusta el espaciado interior del botón según tus preferencias */
+    font-size: 14px; /* Ajusta el tamaño del texto según tus preferencias */
+}
+
+#calificaciones-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+
+/* Estilo para el encabezado de la tabla */
+#calificaciones-table th {
+    background-color: #3498db;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Estilo para las celdas de datos de la tabla */
+#calificaciones-table td {
+    text-align: center; /* Alineación centrada */
+    padding: 5px 10px; /* Espaciado interior */
+}
+
+/* Estilo para el botón "Editar" en cada fila */
+#calificaciones-table .edit-button {
+    background-color: #1E8449; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interior */
+    cursor: pointer;
+}
+
+/* Estilo para alternar el color de fondo de las filas */
+#calificaciones-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo alternativo */
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.edit-icon {
+    font-size: 46px; /* Ajusta el tamaño del icono según sea necesario */
+    color: #FFA500; /* Cambia el color del icono según tus preferencias */
+}
+/*--Boton de habilitar Inscrpcion*/
+.custom-control-input {
+    width: 3em; /* Ajusta el tamaño del input */
+    height: 2em; /* Ajusta el tamaño del input */
+}
+
+.custom-control-label-lg::before {
+    width: 3em; /* Ajusta el tamaño del label */
+    height: 2em; /* Ajusta el tamaño del label */
+    line-height: 2em; /* Alinea verticalmente el texto del label */
+}
+
+
+/* Aplicar estilos al área de información del usuario */
+.user-info {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los títulos (h4) */
+.user-info h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los elementos de la lista (<li>) */
+.user-info ul li {
+    margin-bottom: 5px;
+}
+
+
+/* Estilos para los títulos fuertes (<strong>) */
+.user-info ul li strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.margen-inferior {
+    margin-bottom: 20px; /* Ajusta el valor de acuerdo a tu preferencia de espaciado */
+}
+
+#encabezado-alumno {
+    /* Estilos para la fila de encabezado */
+    background-color: #3498db; /* Cambia el color de fondo a azul */
+    color: #fff; /* Cambia el color de texto a blanco */
+    /* Agrega otros estilos según sea necesario */
+}
+
+#nombre-alumno {
+    /* Estilos para la fila de nombre del alumno */
+    background-color: #e74c3c; /* Cambia el color de fondo a rojo */
+    color: #fff; /* Cambia el color de texto a blanco */
+    /* Agrega otros estilos según sea necesario */
+}
+
+#containerFinalAnalista {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+#containerFinalAnalista table {
+    width: 100%;
+}
+
+#containerFinalAnalista th,
+#containerFinalAnalista td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#containerFinalAnalista th {
+    background-color: #f2f2f2;
+}
+
+#containerFinalRedes {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+#containerFinalRedes table {
+    width: 100%;
+}
+
+#containerFinalRedes th,
+#containerFinalRedes td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#containerFinalRedes th {
+    background-color: #f2f2f2;
+}
+
+
+
+
+.materias-container {
+    display: none;
+    /* Ocultar las materias por defecto */
+}
+
+.expand-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Clase CSS para achicar los inputs en modo de edición */
+.editable-input {
+    width: 50px; /* Ajusta el ancho según tus necesidades */
+    padding: 5px; /* Añade relleno para que los inputs no se vean demasiado pequeños */
+}
+
+/* Clase CSS para los botones de guardar y editar */
+.edit-button, .guardar-button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.guardar-button {
+    background-color: #007BFF; /* Color celeste */
+    color: #fff; /* Texto en color blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.container-sistemas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.program-info .row {
+    background-color: #f3f4f6;
+    /* Cambia este color al que desees */
+    padding: 20px;
+    /* Añade espaciado interno para mejorar la apariencia */
+    border: 1px solid #ddd;
+    /* Borde alrededor de la fila */
+    border-radius: 5px;
+    /* Borde redondeado */
+}
+
+.program-description {
+    padding: 20px;
+}
+
+
+.program-info p {
+    margin: 0;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    /* Borde superior para separar h3 y p */
+}
+
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 325px;
+    /* Ajusta la altura según tus necesidades */
+    border: 1px solid #ccc;
+    /* Añade un borde según tus preferencias */
+}
+
+.select2-container--default .select2-selection--multiple {
+    min-height: 150px;
+}
+
+.custom-border {
+    border-top: 1px solid #3498db;
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: left; /* Alinea el texto a la izquierda dentro del borde */
+}
+
+.custom-border a {
+    color: #3498db;
+    margin-left: 15px; /* Ajusta según sea necesario para el espacio entre el texto y el borde izquierdo */
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.planalta-button {
+    /* Ajusta el espacio entre los botones y la etiqueta de cambio */
+    margin-right: 10px;
+}
+
+.switch {
+    /* Alinea el interruptor al final del contenedor */
+    margin-left: auto;
+}
+
+#botonesArchivos div {
+    display: flex;
+    align-items: center;
+}
+
+#botonesArchivos button {
+    margin-left: 10px;
+}
+
+
+.btn-sm {
+    padding: 6px 12px; /* Ajusta el padding para hacer el botón más pequeño */
+    font-size: 12px; /* Ajusta el tamaño del texto */
+    border-radius: 3px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.btn-sm:hover {
+    background-color: #0066cc; /* Cambio de color de fondo al pasar el mouse */
+}
+
+.export-button {
+    padding: 10px 15px; /* Ajusta el relleno según tus preferencias */
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Ajusta el radio de borde según tus preferencias */
+    cursor: pointer;
+}
+
+
+.cursadaRedes-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cursadaRedes-sidebar {
+    height: 80vh; /* 100% de la altura de la ventana */
+    overflow-y: auto; /* Agregar barra de desplazamiento vertical si es necesario */
+    background-color: #343a40; /* Color de fondo de la barra lateral */
+    color: #ffffff; /* Color del texto en la barra lateral */
+    padding: 20px;
+}
+
+.cursadaRedes-sidebar h2 {
+    color: #17a2b8; /* Color del título en la barra lateral */
+    margin-bottom: 20px;
+}
+
+.cursadaRedes-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cursadaRedes-sidebar li {
+    margin-bottom: 10px;
+}
+
+.cursadaRedes-sidebar li a {
+    text-decoration: none;
+    color: #ffffff; /* Color del texto en la barra lateral */
+    transition: color 0.3s;
+}
+
+.cursadaRedes-sidebar li a:hover {
+    color: #ffc107; /* Cambio de color al pasar el ratón sobre los elementos */
+}
+
